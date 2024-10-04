@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: lightblue;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.sidemenu{
+    width: 100px;
+    height: 120vh;
+    background: floralwhite;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.icon{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    margin: 30px 20px;
+}
+.icon img{
+    width: 50px;
+    cursor: pointer;
+}
+.icon img:hover #dashboard,#profile,#settings,#income,#logout{
+    display: block;
+}
+#dashboard,#profile,#settings,#income,#logout{
+    margin-top: 20px;
+    cursor: pointer;
+    display: none;
+}
+.logout{
+    display: flex;
+    gap: 20px;
+    margin: 40px 20px;
+}
+.logout img{
+    width: 50px;
+    cursor: pointer;
+    text-align: center;
+}
